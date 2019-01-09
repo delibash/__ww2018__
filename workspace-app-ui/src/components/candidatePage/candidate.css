@@ -1,0 +1,108 @@
+.container {
+  > div {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 26rem 1fr;
+    min-height: 100vh;
+    grid-column-gap: 3rem;
+    background-color: var(--lightestGray);
+  }
+  .stepsContainer {
+    @media (max-width: 1439px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.details {
+  max-width: 75rem;
+  min-width: 75rem;
+  margin: 0 auto 2.4rem;
+  padding-top: 2rem;
+  position: relative;
+  @media (max-width: 1439px) {
+    width: auto;
+    margin: 0;
+    margin-right: 3rem;
+    max-width: none;
+    min-width: 0;
+  }
+}
+
+.backBtn {
+  position: absolute;
+  top: 2rem;
+  left: -18rem;
+  color: var(--black);
+  font-size: var(--small);
+  &:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.light {
+  color: var(--darkGray);
+}
+
+.bubble {
+  width: 2.5rem;
+}
+
+.experience {
+  li p {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.brief {
+  @mixin border .8rem, var(--limeGreen), 1.5rem;
+}
+
+.skills li {
+  &:not(:last-child) {
+    margin: 1.4rem 0;
+  }
+}
+
+.summary {
+  p {
+    margin-bottom: .5rem;
+  }
+  .section {
+    &:last-child {
+      border: none;
+    }
+    border-bottom: var(--lighterGrayBorder);
+  }
+}
+
+.section {
+  padding: 2rem 0;
+  h4 {
+    color: var(--blue);
+    margin-bottom: .5rem;
+  }
+  ul, ol, h4, p {
+    font-size: var(--small);
+  }
+  p span {
+    padding: 0 .3rem 0 0;
+    &:not(:first-child) {
+      padding: 0 .3rem;
+    }
+  }
+}
+
+.viewResume {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: .5rem;
+  svg {
+    margin-right: .5rem;
+  }
+}

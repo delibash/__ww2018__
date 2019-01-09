@@ -1,0 +1,30 @@
+.label {
+  color: var(--white);
+  background: var(--lightGray);
+  font-size: var(--tiny);
+  padding: .1rem .8rem;
+  width: auto;
+  &Ideal {
+    background: var(--blue);
+  }
+  &Qualified {
+    background: var(--lightGray);
+  }
+}
+
+.infoBubble {
+  display: flex;
+  height: 1.6rem;
+  width: 1.6rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 100%;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  i {
+    font-style: normal;
+    font-size: var(--tiny);
+  }
+}

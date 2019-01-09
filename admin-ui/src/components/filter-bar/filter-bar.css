@@ -1,0 +1,31 @@
+.container {
+  box-shadow: var(--box-shadow-right);
+  background-color: var(--white);
+}
+
+.tabs {
+  margin-top: 1.5rem;
+  a {
+    color: var(--grey);
+    font-weight: normal;
+  }
+  li {
+    margin: 0;
+  }
+}
+
+.tab {
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: var(--small);
+  margin: 0;
+  padding: 1rem;
+  padding-left: 2rem;
+  display: block;
+  &:hover, &.active {
+    background-color: var(--lighterGray);
+  }
+  &.active {
+    font-weight: 800;
+  }
+}

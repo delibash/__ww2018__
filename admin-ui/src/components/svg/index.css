@@ -1,0 +1,177 @@
+.chevronDown {
+  stroke: var(--black);
+  fill: transparent;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  height: .5rem;
+  width: .9rem;
+}
+
+.chevronUp {
+  stroke: var(--black);
+  fill: transparent;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  height: .5rem;
+  width: .9rem;
+}
+
+.loader {
+  width: 5.3rem;
+  height: 3.3rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.dots {
+  circle {
+    fill: var(--gray);
+  }
+  width: 4rem;
+  height: .5rem;
+  &Vertical {
+    circle {
+      fill: var(--gray);
+    }
+    height: 2rem;
+    width: auto;
+  }
+}
+
+.actionBarIcon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: var(--white);
+  fill-rule: evenodd;
+}
+
+.chatBubble {
+  fill: var(--limeGreen);
+  &Small {
+    height: 14px;
+    width: 15px;
+  }
+}
+
+.close {
+  g {
+    fill: none;
+    stroke: var(--darkGray);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  path {
+    stroke-width: 1.7;
+  }
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.resume {
+  path {
+    fill:none;
+    stroke:var(--gray);
+    stroke-miterlimit:10;
+    stroke-linecap:square;
+    stroke-width:1.5px;
+  }
+  height: 1.8rem;
+  width: 1.6rem;
+}
+
+.checkmark {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
+  &Gray {
+    stroke: var(--darkGray);
+  }
+  &White {
+    stroke: var(--white);
+  }
+}
+
+.candidateAvatar {
+  fill: var(--blue);
+  height: 4.7rem;
+  width: 4.7rem;
+
+  &Advanced {
+    g {
+      fill: none;
+      stroke: var(--blue);
+      stroke-width: 2;
+    }
+  }
+
+  &Held {
+    path {
+      fill: none;
+      stroke: var(--blue);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: .2rem;
+    }
+    circle {
+      stroke-width: 1.71;
+      fill: none;
+      stroke: var(--blue);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+
+  &Declined {
+    g {
+      fill: none;
+      stroke: var(--maroon);
+      stroke-miterlimit: 10;
+      stroke-width: 2;
+    }
+    path {
+      stroke-linecap: round;
+    }
+  }
+
+  &DNQ {
+    path {
+      fill:none;
+      stroke:var(--maroon);
+      stroke-width:.2rem;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+    circle {
+      fill: none;
+      stroke: var(--maroon);
+      stroke-width: 2;
+    }
+  }
+}
+
+.toggleList {
+  fill: var(--lighterGray);
+  width: 1.9rem;
+  height: 1.9rem;
+  &:hover, &Active {
+    fill: var(--blue);
+  }
+}
+
+.dashboardIcon {
+  fill: var(--darkGray);
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.kpisAdvanced,
+.kpisChats,
+.kpisCompetition {
+  fill: none;
+  stroke: var(--darkGray);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

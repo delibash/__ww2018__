@@ -1,0 +1,45 @@
+.container {
+  background: var(--white);
+  &Nav {
+    padding: 0 0 3rem;
+  }
+  &RoleHeader {
+    font-size: var(--regular);
+    color: var(--black);
+  }
+}
+
+.tab {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 3.6rem;
+  &:hover {
+    background-color: var(--lightestGray);
+  }
+  & > div {
+    width: 0.8rem;
+    height: 3.6rem;
+    margin-right: 1.2rem;
+    @media (max-width: 1024px) {
+      margin-right: .4rem;
+    }
+  }
+  &Label {
+    font-size: var(--small);
+    line-height: 1.9rem;
+    color: var(--darkGray);
+    .qty {
+      margin-left: .5rem;
+    }
+  }
+  &Active {
+    font-weight: 700;
+    margin-left: -.1rem;
+    color: var(--darkBlue);
+  }
+  &Handle {
+    background: var(--lightBlue);
+    padding: 0;
+  }
+}

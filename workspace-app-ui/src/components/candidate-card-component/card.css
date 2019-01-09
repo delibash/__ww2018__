@@ -1,0 +1,17 @@
+.blankState {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  max-width: 20rem;
+  margin: 0 auto;
+  flex-flow: column;
+  @media (max-width: 1024px) {
+    margin-left: 20rem;
+  }
+  img {
+    margin-bottom: 4rem;
+  }
+  p {
+    font-size: var(--small);
+  }
+}

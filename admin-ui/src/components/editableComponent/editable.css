@@ -1,0 +1,19 @@
+.blockLevel {
+  @media (max-width: 76.8rem) {
+    display: block!important;
+    margin-top: 1rem;
+  }
+}
+
+.hoverState {
+  cursor: pointer;
+  padding: .2rem 0;
+  button {
+    /* display: none; */
+  }
+  &:hover {
+    button {
+      display: flex;
+    }
+  }
+}

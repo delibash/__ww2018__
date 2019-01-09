@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  background-color: var(--lightestGray);
+  min-height: 100vh;
+}
+
+.navContainerGrid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 16.5rem 1fr;
+  grid-column-gap: 3rem;
+  p, strong, span, h1, h2, h3, a {
+    font-size: var(--small);
+  }
+}
+
+a {
+  font-weight: 600;
+}
+
+.logout {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  stroke: var(--blue);
+}
+
+.logout * {
+  stroke: var(--blue);
+}
+
+.logout:hover {
+  cursor: pointer;
+}

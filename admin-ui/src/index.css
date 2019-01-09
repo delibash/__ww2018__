@@ -1,0 +1,417 @@
+@import-normalize;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  box-sizing: border-box;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/*
+html is set to 62.5% so that all the REM measurements throughout
+are based on 10px sizing. So basically 1.5rem = 15px */
+
+:root {
+  --rootFontSize: 62.5%;
+  --bodyFontSize: 1.4rem;
+}
+
+:root {
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: var(--rootFontSize);
+}
+
+body {
+  font-size: var(--bodyFontSize);
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Typography */
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading {
+  font-weight: 700;
+}
+
+:root {
+  --xLarge: 3.2rem;
+  --large: 2.4rem;
+  --medium: 2rem;
+  --xMedium: 1.8rem;
+  --regular: 1.6rem;
+  --small: 1.4rem;
+  --tiny: 1.2rem;
+  --tiniest: 1rem;
+  /* Breakpoints */
+  --xs: 57.6rem;
+  --sm: 76.8rem;
+  --md: 99.2rem;
+  --lg: 120rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+li {
+  font-size: var(--regular);
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+sup,
+sub {
+  font-size: var(--tiny);
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:active {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+/* Colors */
+
+:root {
+  --white: rgba(255, 255, 255, 1);
+  --black: rgba(0, 0, 0, 1);
+  --darkGray: rgba(117, 131, 153, 1);
+  --gray: rgba(170, 178, 195, 1);
+  --lightGray: rgba(202, 211, 225, 1);
+  --lighterGray: rgba(234, 236, 242, 1);
+  --lightestGray: rgba(247, 247, 248, 1);
+
+  --darkBlue: rgba(14, 25, 65, 1);
+  --blue: rgba(100, 107, 255, 1);
+  --lightBlue: rgba(20, 206, 249, 1);
+  --limeGreen: rgba(36, 232, 183, 1);
+  --maroon: rgba(204, 29, 102, 1);
+  --orange: rgba(255, 129, 126, 1);
+
+  --purple: rgba(59, 64, 176, 1);
+  --darkPurple: rgba(40, 43, 106, 1);
+
+  /* Decorative */
+
+  --lighterGrayBorder: .1rem solid var(--lighterGray);
+  --box-shadow-all: 0 0 .5rem 0 rgba(0, 0, 0, 0.15);
+  --box-shadow-right: .3rem 0 .5rem 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Mixins */
+
+@define-mixin border $size, $color, $padding {
+  border-left: $size solid $color;
+  padding-left: $padding;
+}
+
+/* Utils */
+
+:global {
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-start {
+      justify-content: flex-start;
+    }
+    &-end {
+      justify-content: flex-end;
+    }
+    &-between {
+      justify-content: space-between;
+    }
+    &-around {
+      justify-content: space-around;
+    }
+    &-column {
+      flex-direction: column;
+    }
+    &-row {
+      flex-direction: row;
+    }
+  }
+
+  .centered-absolute {
+    position: absolute;
+  	left: 50%;
+  	transform: translateX(-50%);
+  }
+
+  .blue-border {
+    @mixin border .8rem, var(--blue), 1.4rem;
+    font-size: var(--small);
+  }
+
+  .red-border {
+    @mixin border .8rem, var(--maroon), 1.4rem;
+    font-size: var(--small);
+  }
+
+  .blue-border-narrow {
+    @mixin border .4rem, var(--blue), .8rem;
+    font-size: var(--small);
+    color: var(--gray);
+  }
+
+  .green-border {
+    @mixin border .8rem, var(--limeGreen), 1.4rem;
+  }
+  .chevron {
+    display: flex;
+    align-items: center;
+    &:before {
+      content: "";
+      border-style: solid;
+      border-width: .2rem .2rem 0 0;
+      display: inline-block;
+      width: .6rem;
+      height: .6rem;
+    }
+    &.top:before {
+      transform: rotate(-45deg);
+    }
+    &.bottom:before {
+      transform: rotate(135deg);
+    }
+  }
+
+  .dropdown {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: var(--regular);
+    padding: .5rem;
+    padding-right: 2.5rem;	
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    cursor: pointer;
+    -webkit-appearance: button; /* hide default arrow in chrome OSX */
+    max-width: 100%;
+    font-size: var(--small);
+    font-weight: 600;
+    
+    &Wrapper {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      border: .1rem solid rgba(0,0,0,0.26);
+      border-radius: .3rem;
+      /* max-width: 80%; */
+    }
+  
+    &Wrapper::before,
+    &Wrapper::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+  
+    &Wrapper::after {
+      pointer-events: none;
+      content: "\25BC";
+      height: 1em;
+      font-size: .625em;
+      line-height: 1;
+      right: 1.2em;
+      top: 50%;
+      margin-top: -.5em;
+      color: var(--black);
+    }
+  
+    &Wrapper::before {
+      width: 2em;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-radius: 0 .3rem .3rem 0;
+    }
+  
+    &Container {
+      display: flex;
+      align-items: center;
+      > strong {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .defaultButton {
+    padding: .6rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    border: none;
+    background-color: #646bff;
+    border-radius: .3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .defaultBorderButton {
+    padding: .6rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: #646bff;
+    font-weight: 400;
+    box-shadow: 0 0 0 .1rem #646bff;
+  }
+
+  .smallButton {
+    background-color: #e7e7e7;
+    border-radius: .3rem;
+    font-size: 1rem;
+    border: none;
+    padding: .3rem .8rem;
+    cursor: pointer;
+  }
+
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .flexSpaceBetween {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Syntax Highlighters */
+  .string { color: green; }
+  .number { color: darkorange; }
+  .boolean { color: blue; }
+  .null { color: magenta; }
+  .key { color: red; }
+}

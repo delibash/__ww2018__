@@ -1,0 +1,51 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  grid-gap: .8rem;
+  border-top: .1rem solid var(--lightGray);
+  margin-top: 1.6rem;
+  div:first-child {
+    button {
+      width: auto;
+    }
+  }
+  div {
+    padding: 1.3rem 0 0;
+    &:first-of-type {
+      display: flex;
+    }
+  }
+}
+
+.heldDropDown {
+  box-shadow: inset 0 0 0 0.1rem var(--gray);
+  border-radius: .3rem;
+  font-size: var(--small);
+  background: white;
+  display: block;
+  position: relative;
+  > span {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  > ul {
+    position: absolute;
+    background: white;
+    box-shadow: inset 0 -.1rem 0 0.1rem var(--gray);
+    bottom: -8.2rem;
+    width: 100%;
+    border-radius: 0 0 .3rem .3rem;
+    li {
+      cursor: pointer;
+      padding: 1rem;
+      &:hover {
+        background-color: var(--gray);
+        color: white;
+        border-radius: .3rem;
+      }
+    }
+  }
+}

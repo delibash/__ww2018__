@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 5.5rem 1fr;
+  min-height: 100vh;
+  background-color: var(--lightestGray);
+  &SideBar {
+    grid-template-columns: 27.5rem 1fr;
+    background-color: var(--white);
+  }
+}

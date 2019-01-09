@@ -1,0 +1,69 @@
+.wrapper {
+  position: relative;
+  min-height: 4rem;
+  &Transparent {
+    .containerSorter {
+      background-color: transparent;
+      box-shadow: none;
+      color: var(--white);
+      .handle {
+        color: var(--white);
+        svg {
+          stroke: var(--white);
+        }
+      }
+      .option:hover {
+        color: var(--darkBlue);
+      }
+    }
+    .containerSorterActive {
+      border: none;
+      margin: 0;
+      box-shadow: none;
+    }
+    .option label, .handle {
+      font-size: var(--regular);
+    }
+  }
+}
+.container {
+  &Sorter {
+    position: absolute;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-all);
+    border-radius: .3rem;
+    &Active {
+      border-top: .2rem solid var(--lightBlue);
+      margin-top: -.2rem;
+      box-shadow: var(--box-shadow-all);
+      & > div {
+        display: flex;
+      }
+    }
+  }
+}
+
+.option label, .handle {
+  cursor: pointer;
+  padding: 0 2rem;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  align-items: center;
+  font-size: var(--small);
+}
+
+.handle {
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--darkBlue);
+}
+
+.option {
+  display: none;
+  input { display: none; }
+  &:hover {
+    background-color: var(--lightestGray);
+  }
+}

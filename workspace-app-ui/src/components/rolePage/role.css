@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 26rem 1fr;
+  min-height: 100vh;
+  grid-column-gap: 3rem;
+  background-color: var(--lightestGray);
+  @media (max-width: 1024px) {
+    grid-template-columns: 23rem 1fr;
+  }
+}

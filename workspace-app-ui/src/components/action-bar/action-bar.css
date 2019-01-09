@@ -1,0 +1,36 @@
+.container {
+  .fixedContainer {
+    position: fixed;
+  }
+  .flexContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 5.5rem;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  background-color: var(--blue);
+  &User {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: auto;
+  }
+}
+
+.icons {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  > * {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}

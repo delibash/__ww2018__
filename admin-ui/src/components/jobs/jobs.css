@@ -1,0 +1,22 @@
+.container {
+  article {
+    margin: 2rem auto;
+    align-self: start;
+  }
+  @media (max-width: 76.8rem) {
+    margin: 0;
+  }
+}
+
+.label {
+  margin-right: 1rem;
+  margin-left: -1rem;
+  padding: 1rem;
+  display: inline-block;  
+}
+
+.divider {
+  border-top: .1rem solid var(--lighterGray);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}

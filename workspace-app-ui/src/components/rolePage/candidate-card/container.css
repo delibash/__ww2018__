@@ -1,0 +1,13 @@
+.cards {
+  padding: 2rem 0;
+  width: 75rem;
+  margin: 0 auto;
+  @media (max-width: 1439px) {
+    width: auto;
+    margin: 0 3rem 0 0;
+  }
+}
+
+.tabs {
+  align-self: start;
+}

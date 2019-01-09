@@ -1,0 +1,69 @@
+.container {
+  margin: 6rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 7rem;
+  position: relative;
+  padding-left: 3rem;
+  @media (max-width: 1439px) {
+    grid-column-gap: 0;
+  }
+  > div {
+    @media (max-width: 1439px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.card {
+  min-width: 75rem;
+  max-width: 75rem;
+  justify-self: end;
+  margin-bottom: 4rem;
+}
+
+.response {
+  min-width: 45rem;
+  max-width: 45rem;
+  justify-self: start;
+  display: flex;
+  flex-flow: column;
+  button {
+    width: auto;
+    margin: 2.4rem auto 0 auto;
+  }
+}
+
+.message {
+  margin: 2.4rem 0;
+  padding: 2.4rem 0 0;
+  border-top: .1rem solid var(--lightGray);
+  border-bottom: .1rem solid var(--lightGray);
+  p {
+    margin-bottom: 2rem;
+  }
+}
+
+.aside {
+  margin-bottom: 2.4rem;
+  p {
+    font-size: var(--small);
+  }
+}
+
+.controls {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+
+.backBtn {
+  position: absolute;
+  top: -4rem;
+  left: 3rem;
+  color: var(--black);
+  font-size: var(--small);
+  &:hover {
+    text-decoration: underline;
+  }
+}

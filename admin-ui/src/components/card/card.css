@@ -1,0 +1,17 @@
+.container {
+  max-width: 75rem;
+  min-width: 75rem;
+  border-radius: 0;
+  box-shadow: var(--box-shadow-all);
+  background-color: var(--white);
+  padding: 2.4rem;
+  margin: 0 auto;
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  @media (max-width: 1024px) {
+    margin: 0;
+    min-width: 0;
+    max-width: none;
+  }
+}

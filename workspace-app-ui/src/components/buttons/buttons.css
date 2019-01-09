@@ -1,0 +1,244 @@
+:global {
+  button {
+    width: 100%;
+    padding: 0;
+    border: 0;
+    font-size: var(--small);
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    background-color: var(--lightestGray);
+    &:focus {
+      outline: none;
+      box-shadow: var(--box-shadow-all);
+      color: var(--white);
+    }
+    &:disabled {
+      background-color: var(--lighterGray);
+      color: var(--gray);
+      &:hover {
+        background-color: var(--lighterGray);
+        color: var(--gray);
+      }
+    }
+  }
+}
+
+.transcriptLink {
+  font-size: var(--small);
+  font-weight: 700;
+  display: inline-block;
+  color: var(--blue);
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 .2rem 0 0 var(--blue);
+  }
+  &:active {
+    text-decoration: none;
+    box-shadow: 0 .2rem 0 0 var(--darkBlue);
+    color: var(--darkBlue);
+  }
+}
+
+.textLink {
+  font-size: var(--small);
+  font-weight: 700;
+  display: inline-block;
+  color: var(--gray);
+  cursor: pointer;
+  span {
+    padding-left: .5rem;
+  }
+  &:hover, &:active {
+    color: var(--darkGray);
+  }
+  &Blue {
+    span {
+      font-size: var(--small);
+      font-weight: 700;
+      display: inline-block;
+      cursor: pointer;
+      color: var(--blue);
+      &:hover {
+        text-decoration: none;
+        box-shadow: 0 .2rem 0 0 var(--blue);
+      }
+      &:active {
+        text-decoration: none;
+        box-shadow: 0 .2rem 0 0 var(--darkBlue);
+        color: var(--darkBlue);
+      }
+    }
+  }
+  &Gray {
+    cursor: pointer;
+    font-size: var(--small);
+    font-weight: 700;
+    color: var(--darkGray);
+  }
+}
+
+.btnCheckmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  svg {
+    height: 1.5rem;
+    width: 2rem;
+    margin-bottom: .8rem;
+  }
+}
+
+.btnPill {
+  position: relative;
+  width: auto;
+  border: .1rem solid #758399;
+  border-radius: 1.5rem;
+  color: #758399;
+  padding: .5rem 1.2rem;
+  font-weight: 600;
+  background-color: #F7F7F8;
+  &Linked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.btnMore {
+  display: flex;
+  justify-content: center;
+  min-height: 3.7rem;
+  &Vertical {
+  }
+}
+
+.btnBlue {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  &:hover {
+    background-color: var(--darkGray);
+  }
+  &:active, &:focus {
+    background-color: var(--darkGray);
+  }
+}
+
+.btnGray {
+  background-color: var(--lighterGray);
+  color: var(--darkBlue);
+  &:hover {
+    background-color: var(--lightGray);
+  }
+  &:active, &Active {
+    background-color: var(--darkGray);
+    color: var(--white);
+    svg circle {
+      fill: var(--white);
+    }
+  }
+  &Active:hover {
+    background-color: var(--darkGray);
+  }
+  &:focus {
+    background-color: var(--lighterGray);
+    color: var(--gray);
+  }
+  &.btnCheckmark {
+    svg {
+      stroke: var(--gray);
+    }
+  }
+}
+
+.btnLightBlue {
+  background-color: var(--blue);
+  color: var(--white);
+  &:hover {
+    background-color: var(--purple);
+  }
+  &:active {
+    background-color: var(--darkPurple);
+  }
+  &:focus {
+    background-color: var(--blue);
+  }
+}
+
+.btnClose {
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  &:hover, &:focus {
+    background-color: var(--lightestGray);
+    box-shadow: none;
+  }
+  &:active  {
+    background-color: var(--lighterGray);
+  }
+}
+
+.shareHover {
+  position: relative;
+}
+
+.shareText {
+  position: absolute;
+  z-index: 1;
+  right: 3rem;
+  top: .1rem;
+  height: 3.7rem;
+  width: 15rem;
+  background: var(--white);
+  box-shadow: var(--box-shadow-all);
+  display: flex;
+  justify-content: center!important;
+  align-items: center!important;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lightBlueBorder {
+  background: transparent;
+  border: .3rem solid var(--lightBlue);
+  border-radius: .8rem;
+  white-space: nowrap;
+  width: auto;
+  padding: .8rem 1rem;
+}
+
+.btnClear {
+  background-color: transparent;
+  svg circle {
+    fill: var(--darkGray);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.transparent {
+  background: transparent;
+  color: var(--white);
+  box-shadow: inset 0 0 0 .2rem var(--white);
+}
+
+.blueBorder {
+  border: .2rem solid var(--lightBlue);
+  border-radius: .8rem;
+  background-color: var(--white);
+  font-weight: 600;
+  color: var(--darkBlue);
+  padding: .8rem 1rem;
+  &:focus {
+    color: var(--darkBlue);
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,43 @@
+.toggleTabs {
+  display: flex;
+}
+
+.toggleSummary,
+.toggleExpanded {
+  cursor: pointer;
+  span {
+    display: block;
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+
+.toggleSummary {
+  svg {
+    fill: var(--lighterGray);
+  }
+  &:hover {
+    svg {
+      fill: var(--blue);
+    }
+  }
+}
+
+.toggleExpanded {
+  margin-left: 1rem;
+  span {
+    background-color: var(--lighterGray);
+    &:hover {
+      background-color: var(--blue);
+    }
+  }
+}
+
+.toggleActive {
+  span {
+    background-color: var(--blue);
+  }
+  svg {
+    fill: var(--blue);
+  }
+}

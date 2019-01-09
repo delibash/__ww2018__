@@ -1,0 +1,11 @@
+.DS_Store
+/node_modules
+*.log
+.vscode
+coverage
+/coverage
+node
+target
+ui-service (2).iml
+build
+*/build
