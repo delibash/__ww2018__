@@ -25,7 +25,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 - workspace-app-ui
 - admin-ui
 
-#### Install
+#### Install (must be run in subdirs)
 
 `npm i`
 
