@@ -372,7 +372,7 @@ export const InsightIcon = () => (
 );
 
 export const LogoutIcon = (
-  <svg width="23px" height="26px" viewBox="0 0 23 26" version="1.1">
+  <svg width="23px" height="26px" viewBox="0 0 23 26">
     <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" strokeLinecap="round" strokeLinejoin="round">
         <g transform="translate(-14.000000, -858.000000)" stroke="#FFFFFF" strokeWidth="2">
             <g transform="translate(15.000000, 859.000000)">
