@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel 1`] = `
+Array [
+  .c0 {
+  margin: 1rem 1.8rem 1.8rem;
+}
+
+<h2
+    className="c0"
+  >
+    Some Header
+  </h2>,
+  .c0 {
+  margin: 0 1.8rem;
+}
+
+<section
+    className="c0"
+  >
+    <section />
+  </section>,
+]
+`;

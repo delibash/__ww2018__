@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "node": true
+  },
+  "settings" : {
+    "react": {
+        "version": "detect"
+    } 
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion" : 2018
+  },
+  "rules": {
+      "no-console": [
+          "warn"
+      ],
+      "no-unused-vars": [
+          "warn"
+      ],
+      "indent": [
+          "error",
+          2
+      ],
+      "linebreak-style": [
+          "error",
+          "unix"
+      ],
+      "quotes": [
+          "error",
+          "single"
+      ],
+      "react/self-closing-comp": [
+          "warn"
+      ],
+      "semi": [
+          "error",
+          "always"
+      ]
+  }
+}

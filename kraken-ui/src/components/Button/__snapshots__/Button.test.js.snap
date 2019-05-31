@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Button 1`] = `
+.c0 {
+  padding: .8rem 1.8rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: .2rem;
+  background-color: rgba(100,107,255,1);
+  color: white;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: rgba(234,236,242,1);
+  color: rgba(0,0,0,1);
+}
+
+<button
+  className="c0"
+  disabled={false}
+>
+  Button
+</button>
+`;

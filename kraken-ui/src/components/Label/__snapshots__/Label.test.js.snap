@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Label 1`] = `
+.c0 {
+  padding: .6rem 1.2rem;
+  font-size: 1.3rem;
+  color: rgba(100,107,255,1);
+  font-weight: 600;
+  border: .1rem solid rgba(0,0,0,.25);
+  border-radius: 1.6rem;
+  background-color: rgba(234,236,242,1);
+}
+
+<span
+  className="c0"
+>
+  Label
+</span>
+`;

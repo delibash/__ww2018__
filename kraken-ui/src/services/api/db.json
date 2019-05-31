@@ -1,0 +1,34 @@
+{
+  "options": [
+    "Alternate Title",
+    "Concrete Title"
+  ],
+
+  "node": {},
+
+  "edgeTypes": [
+    "IS_A_JOB_FUNCTION_OF",
+    "IS_A_TYPE_OF",
+    "IS_A",
+    "IS_REFERRED_TO_AS",
+    "IS_RELATED_TO",
+    "IS_MEASURED_BY",
+    "IS_AN_ALIAS_OF",
+    "IS_A_REQUIREMENT_OF",
+    "IS_A_RESPONSIBILITY_OF"
+  ],
+
+  "vocabularyTypes": [
+    "Job",
+    "Measure",
+    "Thing",
+    "Technology",
+    "Tool",
+    "Education",
+    "Title",
+    "Industry",
+    "Organization",
+    "Responsibility",
+    "Skill"
+  ]
+}

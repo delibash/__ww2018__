@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders AddedNode Container 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1.8rem 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 {
+  padding: .6rem 1.2rem;
+  font-size: 1.3rem;
+  color: rgba(100,107,255,1);
+  font-weight: 600;
+  border: .1rem solid rgba(0,0,0,.25);
+  border-radius: 1.6rem;
+  background-color: rgba(234,236,242,1);
+}
+
+.c2 {
+  padding: .6rem 1.2rem;
+  font-size: 1.3rem;
+  color: rgba(0,0,0,1);
+  font-weight: 300;
+  border: 0 none;
+  border-radius: .2rem;
+  background-color: rgba(234,236,242,1);
+}
+
+<ul
+  className=""
+>
+  <li
+    className=""
+  >
+    <section
+      className="c0"
+    >
+      <span
+        className="c1"
+      >
+        
+      </span>
+      <span
+        className="c2"
+        color="rgba(0, 0, 0, 1)"
+        fontWeight={300}
+      >
+        Node Added!
+      </span>
+    </section>
+  </li>
+</ul>
+`;
